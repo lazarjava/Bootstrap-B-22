@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    background-color: #d0967c;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.navbar-nav .nav-link {
+  margin-left: 10px;
+  margin-right: 10px;
+   border-bottom: 1px solid transparent;
+}
+.navbar-nav .nav-link:hover {
+    border-bottom: 1px solid white;
+    color: brown !important;
+}
+.navbar-brand img {
+    margin-left: 40px;
+
+}
+.carousel-item.active img {
+  width: 100%;           /* Fills the container horizontally */
+  height: 100%;          /* Fills the container vertically */
+  object-fit: cover;     /* Ensures the image covers the entire area without distortion */
+}
+.card-body {
+  width: 100%;
+  padding: 1.5rem; 
+  box-sizing: border-box; 
+  
+}
+
+.card.py-5.text-center.h-100 {    /* project 123 */
+  
+  background-color:#3c2444;
+  border-radius: 10px;
+}
+
+
+.row.py-5 h4 {
+  background-color:#e6ffe6; /* Light green background */
+  text-align: center;
+  padding-left:-20px;
+  font-size: 5rem;
+  color: #333;
+}
+
+/* Card title (h4) specific to cards */
+.card-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 10px;
+  color: yellow; /* Optional: organic green tone */
+  text-align: center;
+  padding-left:-10px;
+}
+.card-text {
+  text-align:left;
+  padding-right:50px;
+}
+
+/* Card image styling - center aligned and sized */
+.card-body img {
+  display: flex;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  object-fit: cover; /* fills the box, may crop */
+  border-radius: 8px; /* optional: smooth corners */
+}
+
+
+.btn.btn-success.active1 {
+  position: relative;
+  padding:1rem 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  background: none;
+  border:2px solid #d0967c;
+  border-radius:  8px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+
+}
+.btn.btn-success.active1 {
+  background: linear-gradient(#dbb370 0 0) no-repeat calc(200% - var(--p, 0%))
+    100% / 200% var(--p, 0.2em);
+  transition: 0.3s var(--t, 0s),
+    background-position 0.3s calc(0.3s - var(--t, 0s));
+}
+
+.btn.btn-success.active1:hover {
+  --p: 100%;
+  --t: 0.3s;
+  color: #fff;
+}
+
+.card.text-center1 {
+  background-color: #e1693b;
+  width: 100%;
+  border-radius: 5px;
+  padding: 2rem; /* for spacing inside the card */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers content horizontally */
+  text-align: center; /* centers text inside */
+
+}
+.card.text-center1 img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: rem;
+}
+.card.text-center1 .cardbody {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.btn.btn-outline-success.pt-2 {
+  background-color: green;  /* Initial background */
+  color: white;               /* Initial text color */
+  border: 2px solid black;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.btn.btn-outline-success.pt-2:hover {
+  background-color: aqua;     /* Color when hovered */
+  color: blue;                /* Text color when hovered */
+  border-color: blue;   
+}
+.row.py-5 h1#great {
+  font-family: 'Anton', 'Poppins', sans-serif;
+  font-style: italic;
+}
+.rgb {
+  position: relative;
+  display: inline-block;
+  border-radius: 18px;
+  padding: 0;
+}
+
+.rgb::after {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000 0%,     /* red */
+    #ff9a00 50%,    /* orange */
+    #d0de21 100%    /* yellow-green */
+  );
+  background-size: 300% 100%;
+  position: absolute;
+  inset: -3px;
+  border-radius: 20px;
+  filter: blur(8px);
+  transform: translate(-1px);
+  animation: rgb 6s linear infinite;
+  z-index: -1;
+}
+
+
+/* Card styles */
+.card {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 210px 250px 20px;
+  grid-template-areas:
+    "image"
+    "text"
+    "stats";
+  border-radius: 18px;
+  background: #1d1d1d;
+  color: #fff;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: Roboto, sans-serif;
+  text-align: justify;
+  cursor: pointer;
+  margin: 30px;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  position: relative;
+  overflow: hidden;
+}
+
+.card-image.card1{
+  grid-area: image;
+  background: linear-gradient(#fff0 0%, #fff0 70%, #1d1d1d 100%), url("https://katharostechie.in/wp-content/uploads/2023/10/User-Interface1.jpg");
+  
+  background-size: cover;
+  width: 100%;
+  height: 210px;
+}
+.card-image.card2 {
+  grid-area: image;
+  background: linear-gradient(#fff0 0%, #fff0 70%, #1d1d1d 100%), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoeA2OXxQnTb-Msc_E4VqaPu3gGfxfysbyhteUKjHQg1B1YBs6RnEwEpuj-lnZkxsfRrM&usqp=CAU"); /* different image */
+  background-size: cover;
+  width: 100%;
+  height: 210px;
+}
+
+.card-image.card3 {
+  grid-area: image;
+  background: linear-gradient(#fff0 0%, #fff0 70%, #1d1d1d 100%), url("https://media.licdn.com/dms/image/v2/D5612AQFRVE4pJnYwpw/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1700365872606?e=2147483647&v=beta&t=6R6lqe-WjNpgBHml2rCcjmiSj35FmWBay63Sg05RJ2I"); /* different image */
+  background-size: cover;
+  width: 100%;
+  height: 210px;
+}
+
+.card-text {
+  grid-area: text;
+  margin: 25px;
+  transform: translateX(30px);
+}
+
+.card-text .date {
+  color: rgb(255, 7, 110);
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.card-text p {
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  
+}
+
+.card-text h2 {
+   margin-top: 0px;
+  font-size: 28px;
+}
+
+@keyframes rgb {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.btn-success-E {
+  background-color:#3c2444;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-success-E:hover {
+  background-color:#f6bf27; /* Darker shade for hover */
+  color: black;
+}
+
+

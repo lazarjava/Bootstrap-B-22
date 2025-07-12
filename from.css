@@ -1,0 +1,65 @@
+/* Contact Section */
+.Contact {
+  background-color:#d0967c;
+  padding: 60px 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Contact h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.Contact p {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/* Form Inputs */
+.Contact .form-control {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+  box-shadow: none;
+  font-size: 1rem;
+}
+
+.Contact .form-control:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 8px rgba(40, 167, 69, 0.2);
+  outline: none;
+}
+
+/* Textarea Styling */
+.Contact textarea.form-control {
+  resize: none;
+}
+
+/* Submit Button */
+.Contact .btn1 {
+  margin-top: 20px;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.Contact .btn1:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .Contact h1 {
+    font-size: 2rem;
+  }
+
+  .Contact p {
+    font-size: 0.95rem;
+  }
+}
