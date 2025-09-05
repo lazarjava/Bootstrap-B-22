@@ -1,0 +1,71 @@
+body {
+  background-image: url('https://devimages-cdn.apple.com/wwdc-services/images/3055294D-836B-4513-B7B0-0BC5666246B0/9910/9910_wide_900x506_2x.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10%;
+  border: 1px solid rgba(242,241,249,255);
+}
+h1{
+  text-align: center;
+  color: black;
+}
+.fa-phone {
+  font-size: 50px;
+  color: red;
+  margin-right: 10px;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color:rgba(226,227,234,255);
+  box-sizing: border-box;
+  outline: none;
+  border:1px solid rgba(242,241,249,255);
+  
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  gap: 10px;
+  
+}
+
+.btn button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  box-sizing:border-box;
+  border: 1px solid #f2f1f9;
+  
+}
+
+#view {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #e40606;
+  color: white;
+  border-radius: 5px;
+  word-wrap: break-word;
+}
